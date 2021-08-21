@@ -18,11 +18,11 @@ body {
 }
 
 p {
-  font-size: 0.7em;
+  font-size: 0.875em;
 }
     
 ul li{
- font-size:0.7em;
+ font-size:0.875em;
 }
 </style>
 </head>
@@ -77,7 +77,15 @@ ul li{
 <script type="text/javascript">
 $(document).foundation();
 
-$('img[usemap]').mapster();
+$('img[usemap]').mapster({
+  fillOpacity: 0.4,
+  fillColor: "#808080",
+  stroke: true,
+  strokeColor: "3320FF",
+  strokeOpacity: 0.8,
+  strokeWidth: 4,
+  singleSelect: true,
+});
 
 </script>
 
