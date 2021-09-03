@@ -35,6 +35,23 @@
 <body>
 
 <h1> Welcome to IS Co-op Open House Room Tour!!</h1>
+<!---
+<div styple="text-align:right">
+    <span data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Interactive floor maps developed for ISCo-op virtual open house! Contact hfchen@unm.edu for technical help!">About</span>
+</div>
+
+<a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">About</a>
+<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+  <p>Interactive floor maps developed for ISCo-op virtual open house! <br> Contact hfchen@unm.edu for technical help!</p>
+</div>
+--->
+
+<p><a href="#" data-reveal-id="aboutModal" style="float:right">About</a></p>
+
+<div id="aboutModal" class="reveal-modal small" data-reveal aria-labelledby="about" aria-hidden="true" role="dialog">
+  <p style="font-size:16px">Interactive floor maps developed for ISCo-op virtual open house! <br><br> Contact hfchen@unm.edu for technical help!</p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 
 <!-- 
 <p><a href="f5Floor1.html" class="button radius">First Floor (CSI, Visualization Lab, Work Room)</a> </p>
@@ -48,6 +65,10 @@
     <p><a href="f5Floor0.html" class="button radius">Basement </a> (NCF, LMOS)</p>
 </div>
 
+<script type="text/javascript">
+$(document).foundation();
+
+</script>
 </body> 
 
 </html> 
