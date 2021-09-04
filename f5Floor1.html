@@ -33,6 +33,7 @@ ul li{
 <body> 
 <h1> Welcome to IS Co-op Open House Room Tour!!</h1>
 
+<!---
 <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Select a floor plan</a>
 <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
   <li><a href="f5Floor0.html">Basement</a></li>
@@ -40,26 +41,34 @@ ul li{
   <li><a href="f5Floor0.html">Floor 2</a></li>
 </ul>
 
-<!---
+
 <div class="btn-group">
     <button class="button" class ="tooltip" data-title = "NCF, LMOS"> <a href="f5Floor0.html">Basement</a>  </button>
     <button class="button" class ="tooltip" data-title = " CSI, Visualization Lab, Work Room" class ="active">  <a href="f5Floor1.html">Floor 1</a> </button>
     <button class="button"  class ="tooltip" data-title = "Co-op Room, Conference Room, CHmPP, CGaT, CQuIC, ASPIRE "> <a href="f5Floor2.html">Floor 2</a> </button>  
 
 </div>
---->
 
-<!-- Rounded Button Group -->
-<ul class="button-group round">
+<ul class="button-group radius">
   <li><a href="f5Floor0.html" class="button secondary">Basement</a></li>
-  <li><a href="f5Floor1.html" class="button secondary">Floor 1</a></li>
+  <li><a href="f5Floor1.html" class="button primary">Floor 1</a></li>
   <li><a href="f5Floor2.html" class="button secondary">Floor 2</a></li>
 </ul>
+--->
 
 <div class="row"> 
-
-<h3>Click the orange regions (only Viz lab and Work room clickable right now) to see IS Co-op room photos.</h3> 
-
+    <div class="button-group radius">
+      <span data-tooltip aria-haspopup="true" class="has-tip round" title="(NCF, LMOS)">
+        <a href="f5Floor0.html" class="button secondary">Basement</a>
+      </span>
+      <span data-tooltip aria-haspopup="true" class="has-tip round" title="(CSI, Visualization Lab, Work Room)">
+        <a href="f5Floor1.html" class="button primary">First Floor</a>
+      </span>
+      <span data-tooltip aria-haspopup="true" class="has-tip round" title="(Co-op Room, Conference Room, CHmPP, CGaT, CQuIC, ASPIRE)">
+        <a href="f5Floor2.html" class="button secondary">Second Floor</a>
+      </span>
+    </div>
+    <p><i>Click the orange regions (only Viz lab and Work room clickable right now) to see IS Co-op room photos.</i></p> 
 </div> 
 
 <div> 
