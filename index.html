@@ -6,71 +6,423 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/css/foundation.min.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/foundation.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.1.1/what-input.min.js"></script>
+<!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.js" integrity="sha512-cpMx2tMC8g9QilwXFVFqVT5TWkvfq/xEaOspfF1FUUUJy5mL6As50+uh3yOoVlu1bKwsJrUthuEzC1m6WquRKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <style>
-  html {
-    background: url('img/zoom---pais_smaller1400.jpg') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.5;
-    height: 100%;
-    overflow: hidden;
-  }
-  h1 {
-    text-align: center;
-    font-size : 3vmax;
-  }
-  p {
-    font-size: 2.0vmax;
-  }
-  a {
-    font-size: 2.0vmax;
-  }
+body {
+  font-size: 100%;
+}
+h1 {
+  text-align: center;
+  font-size : 3vmax;
+}
+p {
+  font-size: 0.875em;
+}
+    
+ul li{
+ font-size:0.875em;
+}
 </style>
-
 </head>
 
-<body>
+<body> 
+<h1> Open House Logo</h1>
 
-<h1> Welcome to IS Co-op Open House Room Tour!!</h1>
-
-<div style="text-align:right">
-    <span data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Interactive floor maps developed for ISCo-op virtual open house! Contact hfchen@unm.edu for technical help!">About</span>
+<div class="callout success text-center">
+  <p>Welcome to the UNM Interdisciplinary Science Cooperative’s Virtual Open House. Until we can safely invite you 
+into our space within PAIS we hope that this virtual experience not only teaches you about how our 
+collaborative is supporting our University’s research mission but also gives you a firsthand look at our state-of-the art facility.
+<br>Throughout the month of October, please take time to explore each of our Centers and laboratories, as well as 
+our projects. If you are interested in getting involved in our upcoming Team Research Symposium or any of our 
+other upcoming activities, please contact Irene.</p>
 </div>
 
+
+<div class="button-group align-center">
+  <a href="https://isco-op.unm.edu/community/membership.html" target="_blank" class="button alert" style='width: 20%;'>BECOME A MEMBER</a>
+  <a href="https://isco-op.unm.edu/meeting-space/room-request.html" target="_blank" class="button alert" style='width: 20%;'>RESERVE A COLLABORATIVE MEETING SPACE FOR YOUR TEAM</a>
+  <a href="https://forms.unm.edu/forms/newsletter_mailing_list_signup" target="_blank" class="button alert" style='width: 20%;'>JOIN OUR MAILING LIST</a>
+  <a href="https://isco-op.unm.edu/community/giving-opportunities.html" target="_blank" class="button alert" style='width: 20%;'>MAKE A GIFT</a>
+</div>
 
 <!---
-<a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">About</a>
-<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-  <p>Interactive floor maps developed for ISCo-op virtual open house! <br> Contact hfchen@unm.edu for technical help!</p>
+<div class="row"> 
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/zoom---pais_smaller1200.jpg" width="400" height="200" alt="PAIS">
+          <figcaption class="orbit-caption">PAIS</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/Co-op Room.jpg" width="400" height="200" alt="Co-op">
+          <figcaption class="orbit-caption">Co-op Room</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/zoom---courtyard.jpg" width="400" height="200" alt="Courtyard">
+          <figcaption class="orbit-caption">Courtyard</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0">
+      <span class="show-for-sr">First slide details.</span>
+      <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+    </button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+  </nav>
+</div>
 </div>
 --->
 
-<p><a href="#" data-reveal-id="aboutModal" style="float:right">About</a></p>
+<p class="text-center"><i>CLICK THE TABS BELOW TO TRAVEL THROUGH THE FLOORS OF PAIS. ONCE YOU ARE ON YOUR SELECTED
+FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THEM.</i></p>
 
-<div id="aboutModal" class="reveal-modal small" data-reveal aria-labelledby="about" aria-hidden="true" role="dialog">
-  <p style="font-size:16px">Interactive floor maps developed for ISCo-op virtual open house! <br><br> Contact hfchen@unm.edu for technical help!</p>
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<!---  
+<div class="row"> 
+    <div class="button-group align-center">
+      <span data-tooltip aria-haspopup="true" class="has-tip" title="(NCF, LMOS)">
+        <a href="f6Floor0.html" class="button secondary">Basement</a>
+      </span>
+      <span data-tooltip aria-haspopup="true" class="has-tip" title="(CSI, Visualization Lab, Work Room)">
+        <a href="f6Floor1.html" class="button primary">First Floor</a>
+      </span>
+      <span data-tooltip aria-haspopup="true" class="has-tip" title="(Co-op Room, Conference Room, CHmPP, CGaT, CQuIC, ASPIRE)">
+        <a href="f6Floor2.html" class="button secondary">Second Floor</a>
+      </span>
+    </div>
+    <p><i>Click the orange regions (only Viz lab and Work room clickable right now) to see IS Co-op room photos.</i></p> 
+</div>
+ --->
+
+
+<div style="display: flex; justify-content: center;">
+    <ul class="tabs" data-active-collapse="true" data-tabs id="floor-tabs">
+      <li class="tabs-title is-active"><a href="#panel0c" class="button alert">BASEMENT</a></li>
+      <li class="tabs-title"><a href="#panel1c" class="button alert">1<sup>ST</sup> FLOOR</a></li>
+      <li class="tabs-title"><a href="#panel2c" class="button alert">2<sup>ND</sup> FLOOR</a></li>
+      <li class="tabs-title"><a href="#panelpc" class="button alert">PROJECTS</a></li>
+      <li class="tabs-title"><a href="#panelfc" class="button alert">FELLOWSHIP</a></li>
+    </ul>
 </div>
 
-<!-- 
-<p><a href="f5Floor1.html" class="button radius">First Floor (CSI, Visualization Lab, Work Room)</a> </p>
-<p><a href="f5Floor2.html" class="button radius">Second Floor (Co-op Room, Conference Room, CHmPP, CGaT, CQuIC, ASPIRE)</a></p>
-<p><a href="" class="button radius">Basement (NCF, LMOS)</a></p>
+<div class="tabs-content" data-tabs-content="floor-tabs">
+  <div class="tabs-panel is-active" id="panel0c">
+  <h4>BASEMENT</h4>
+        <div>    
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+            <img src="img/Basement_V2.jpg" usemap="#image-map0">
+
+            <map name="image-map0">
+                <area alt="LMOS" data-open="LMOS" href="" coords="1707,1111,2021,1577" shape="rect">
+                <area alt="NCF" data-open="NCF" href="" coords="2051,1688,2208,1688,2208,2011,2301,2011,2301,1691,2508,1688,2517,1959,2858,1971,2858,2454,1861,2454,1855,2011,2051,2011" shape="poly">
+            </map>
+
+        </div> 
+
+        <div id="LMOS" class="reveal small" data-reveal>
+          <img src="img/LMOS.jpg" /> 
+          <h4>Laboratory for Magneto-optical Spectroscopy</h4>
+          <p>Laboratory for Magneto-optical Spectroscopy</p>
+
+          
+          <p>
+            <a href="https://isco-op.unm.edu/centers/msl.html" class="button small" target="_blank">Website</a>
+            <a  data-open="secondModal_lmos" class="button small">Video</a>
+          </p>
+
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div id="secondModal_lmos" class="reveal medium" data-reveal>
+          <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/-odbc4Iy5zc" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div id="NCF" class="reveal small" data-reveal>
+          
+          <img src="img/NCF.jpg" /> 
+          <h4>Nanomaterials Characterization Facility</h4>
+          
+          <p>
+            <a href="https://isco-op.unm.edu/centers/ncf.html" class="button small" target="_blank">Website</a>
+            <a  data-open="secondModal_ncf" class="button small">Video</a>
+          </p>
+
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div id="secondModal_ncf" class="reveal medium" data-reveal>
+          <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/emLs-Wl_tnM" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+  </div>
+  
+  <div class="tabs-panel" id="panel1c">
+   <h4>1ST FLOOR</h4>
+
+        <div> 
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+            <!-- <img src="img/PAIS_Page_2.jpg" > -->
+
+            <img src="img/page2_addtext_com.jpg"  usemap="#image-map1">
+
+            <map name="image-map1">
+                <area alt="Viz Lab" href="" coords="525,1428,683,1720" shape="rect" data-open="vizlab">
+                <area alt="Work Room" href="" coords="914,1434,690,1716" shape="rect" data-open="workroom">
+            </map>
+        </div> 
+
+        <div id="vizlab" class="reveal small" data-reveal>
+          <img src="img/Viz Lab.jpg" /> 
+          <h4>Visualization Lab</h4>
+          <p>
+            <a href="https://isco-op.unm.edu/centers/cquic.html" class="button small" target="_blank">CQuIC on Co-op website</a>
+            <a data-open="secondModal" class="button small">Video</a>
+          </p>
+          <p>This isn't your average video wall - 50,000,000 pixel resolution (23,040 x 6480) </p>
+          <ul>
+            <li>18 4k monitors that can be used as one screen or separately</li>
+            <li>8 tables with charging stations</li>
+            <li>Seating for up to 20 people</li>
+            <li>3 large white boards</li>
+            <li>Blazing fast Wi-Fi</li>
+          </ul>
+
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div id="secondModal" class="reveal medium" data-reveal>
+          <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/57NFJI9tng0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div id="workroom" class="reveal small" data-reveal>
+          
+          <img src="img/Work Room.jpg" /> 
+          <h4>Work Room</h4>
+          <p>Break into groups in the work room for code training or bring everyone together for a presentation. </p>
+
+          <ul>
+            <li>One electronic screen with projector</li>
+            <li>Seating for up to 40 people</li>
+            <li>2 walls of white boards</li>
+          </ul> 
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+<!--- 
+<iframe src="f6Floor1.html" seamless onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
 --->
 
-<div>  
-    <p><a href="f5Floor1.html" class="button radius">First Floor</a> (CSI, Visualization Lab, Work Room)</p>
-    <p><a href="f5Floor2.html" class="button radius">Second Floor</a> (Co-op Room, Conference Room, CHmPP, CGaT, CQuIC, ASPIRE)</p>
-    <p><a href="f5Floor0.html" class="button radius">Basement </a> (NCF, LMOS)</p>
+  </div>
+  
+  <div class="tabs-panel" id="panel2c">
+    <h4>2ND FLOOR</h4>
+        <div>
+            <!-- Image Map Generated by http://www.image-map.net/ 
+            <img src="img/PAIS_Page_3.jpg" usemap="#image-map">
+            -->
+
+            <img src="img/page3_addtext_com.jpg"  usemap="#image-map2">
+
+            <map name="image-map2">
+                <area alt="aspire" data-open="aspire" href="" coords="1242,1145,1543,1149,1543,1260,1559,1265,1565,1462,1551,1460,1549,1655,1452,1657,1447,1630,1293,1628,1297,1368,1242,1358" shape="poly">
+                <area alt="co-op" data-open="co-op" href="" coords="1179,1451,1175,1580,1090,1582,1088,1817,1547,1817,1549,1661,1452,1655,1449,1628,1297,1626,1295,1451" shape="poly">
+                <area alt="confroom" data-open="confroom" href="" coords="1242,801,1458,897" shape="rect">
+            </map>
+        </div> 
+
+        <div id="aspire" class="reveal small" data-reveal>
+          <img src="img/Aspire.jpg" /> 
+          <h4>Center for the Advancement of Spatial Informatics Research and Education (ASPIRE)</h4>
+          <p>ASPIRE brings together faculty with expertise and cutting-edge research portfolios in a broad range of GIScience sub-fields, including spatial modeling, geo-visualization, remote sensing, and spatial statistics.</p> 
+
+          <p>
+            <a href="https://isco-op.unm.edu/centers/aspire.html" class="button small" target="_blank">ASPIRE on Co-op website</a>
+            <a data-open="secondModal_ASPIRE" class="button small">Video</a>
+          </p>
+          
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div id="secondModal_ASPIRE" class="reveal medium" data-reveal>
+          <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/dnAeLyVLdfA" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div id="co-op" class="reveal small" data-reveal>
+          
+          <img src="img/Co-op Room.jpg" /> 
+            <p>The Co-op Room is a great space for a corporate retreat, a workshop, or even a reception. This bright, light space is the perfect environment for bringing people together in the spirit of collaboration and advancement.</p>
+
+          <ul>
+            <li>One 4K presentation monitor</li>
+            <li>Seating for 60 people</li>
+            <li>5 mobile white boards, 4 large stationary white boards</li>
+            <li>All furniture can be moved except for the couch</li>
+          </ul> 
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div id="confroom" class="reveal small" data-reveal>
+          
+          <img src="img/Conference Room.jpg" /> 
+            <p>The Co-op Room is a great space for a corporate retreat, a workshop, or even a reception. This bright, light space is the perfect environment for bringing people together in the spirit of collaboration and advancement.</p>
+
+          <ul>
+            <li>One 4K presentation monitor</li>
+            <li>Seating for 60 people</li>
+            <li>5 mobile white boards, 4 large stationary white boards</li>
+            <li>All furniture can be moved except for the couch</li>
+          </ul> 
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+   </div>
+  
+  <div class="tabs-panel" id="panelpc">
+    <div class="grid-container">
+  <div class="grid-x grid-margin-x small-up-2 medium-up-2">
+    <div class="cell">
+      <div class="card">
+        <div class="card-divider">
+        MUSEUM RESEARCH TRAINEESHIP
+      </div>     
+        <div class="card-section">
+          <ul>
+          <li><a href="https://mrt.unm.edu/" target="_blank">Website</a></li>
+          <li>Video in development</li>
+          <li>News stories - impact report</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="card">
+          <div class="card-divider">
+        RIO GRANDE RESEARCH COLLABORATIVE
+      </div>
+        <div class="card-section">
+
+          <ul>
+          <li>Website</li>
+          <li>RGRC 5-minute video</li>
+          <li>News stories - impact report</li>
+        </ul>
+          <button class="button" data-open="rgrcModal2">RGRC playlist or embed directly as below</button>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4kYLpSyR7Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <div class="reveal" id="rgrcModal2" data-reveal>
+          <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/4kYLpSyR7Wo" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+  </div>
+    
+   <div class="tabs-panel" id="panelfc">
+       <div class="grid-container">
+        <div class="grid-x grid-margin-x small-up-2 medium-up-2">
+          <div class="cell">
+            <div class="card">
+                <div class="card-divider">
+                Undergraduate Fellowship in Water Management
+              </div>
+              <img src="img/rectangle-1.jpg">
+              <div class="card-section">
+                <ul>
+                  <li><a href="https://isco-op.unm.edu/community/fellowship-opportunities.html" target="_blank">Website</a></li>
+                  <li>Video</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+
 
 <script type="text/javascript">
 $(document).foundation();
 
-</script>
-</body> 
+$('img[usemap]').mapster({
+  fillOpacity: 0.3,
+  fillColor: "ffffff",
+  stroke: true,
+  strokeColor: "3320FF",
+  strokeOpacity: 0.8,
+  strokeWidth: 3,
+  singleSelect: true
+});
 
+</script>
+
+</body> 
 </html> 
