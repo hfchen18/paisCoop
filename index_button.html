@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>UNM PAIS IS Co-op Open House 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.1.1/what-input.min.js"></script>
+<!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.js" integrity="sha512-cpMx2tMC8g9QilwXFVFqVT5TWkvfq/xEaOspfF1FUUUJy5mL6As50+uh3yOoVlu1bKwsJrUthuEzC1m6WquRKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body> 
+<h1 style="text-align: center"> Open House 2021</h1>
+
+<div class="callout success text-center">
+  <p>Welcome to the UNM Interdisciplinary Science Cooperative’s Virtual Open House. Until we can safely invite you 
+into our space within PAIS we hope that this virtual experience not only teaches you about how our 
+collaborative is supporting our University’s research mission but also gives you a firsthand look at our state-of-the art facility.
+<br><br>Throughout the month of October, please take time to explore each of our Centers and laboratories, as well as 
+our projects. If you are interested in getting involved in our upcoming Team Research Symposium or any of our 
+other upcoming activities, please contact <a href = "mailto: igray@unm.edu">Irene</a>.</p>
+</div>
+
+
+<div class="button-group align-center">
+  <a href="https://isco-op.unm.edu/community/membership.html" target="_blank" class="button alert" style='width: 20%;'>BECOME A MEMBER</a>
+  <a href="https://isco-op.unm.edu/meeting-space/room-request.html" target="_blank" class="button alert" style='width: 20%;'>RESERVE A COLLABORATIVE MEETING SPACE FOR YOUR TEAM</a>
+  <a href="https://forms.unm.edu/forms/newsletter_mailing_list_signup" target="_blank" class="button alert" style='width: 20%;'>JOIN OUR MAILING LIST</a>
+  <a href="https://isco-op.unm.edu/community/giving-opportunities.html" target="_blank" class="button alert" style='width: 20%;'>MAKE A GIFT</a>
+</div>
+
+<p class="text-center"><i>CLICK THE TABS BELOW TO TRAVEL THROUGH THE FLOORS OF PAIS.<br> ONCE YOU ARE ON YOUR SELECTED
+FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THEM.</i></p>
+
+<div class="row">
+  <div class="columns" >
+    <div style="display: flex; justify-content: center;">
+        <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="flex1-tabs">
+          <li class="tabs-title is-active"><a href="#panel0c" class="button large alert"  aria-selected="true">BASEMENT</a></li>
+          <li class="tabs-title"><a href="#panel1c" class="button large alert">1<sup>ST</sup> FLOOR</a></li>
+          <li class="tabs-title"><a href="#panel2c" class="button large alert">2<sup>ND</sup> FLOOR</a></li>
+          <li class="tabs-title"><a href="#panelpfc" class="button large alert">PROJECTS & FELLOWSHIPS</a></li>
+        </ul>
+    </div>
+
+    <div class="tabs-content" data-tabs-content="flex1-tabs">
+
+      <div class="tabs-panel is-active" id="panel0c">
+        <div data-include="floor0x"></div>
+      </div>
+     
+      <div class="tabs-panel" id="panel1c">
+        <div data-include="floor1x"></div>
+      </div>
+      
+      <div class="tabs-panel" id="panel2c">
+        <div data-include="floor2"></div>
+      </div>
+      
+      <div class="tabs-panel" id="panelpfc">
+        <div data-include="projects_fellowshipsx"></div>
+      </div>
+     
+    </div>
+      
+</div>
+</div>
+
+<script>
+$(document).foundation();
+__foundationRun = true;
+
+function foundationUpdate(el) {
+    if (__foundationRun) {
+        if (el.data('zfPlugin'))
+            // existing element already has a plugin - update
+            Foundation.reInit(el);
+        else
+            // new element - initialize
+            el.foundation();
+    }
+    // else leave for foundation to init
+}
+
+$(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+  
+});
+
+foundationUpdate($(".reveal small"));
+foundationUpdate($(".reveal medium"));
+foundationUpdate($(".tabs-content"));
+foundationUpdate($(".tabs-panel"));
+
+</script>
+
+</body> 
+</html> 
