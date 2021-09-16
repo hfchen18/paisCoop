@@ -47,29 +47,27 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <div class="columns" >
     <div style="display: flex; justify-content: center;">
         <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="flex1-tabs">
-          <li class="tabs-title is-active"><a href="#panel0c" class="button large alert"  aria-selected="true">BASEMENT</a></li>
-          <li class="tabs-title"><a href="#panel1c" class="button large alert">1<sup>ST</sup> FLOOR</a></li>
-          <li class="tabs-title"><a href="#panel2c" class="button large alert">2<sup>ND</sup> FLOOR</a></li>
+          <li class="tabs-title"><a href="#panel0c" class="button large alert"  aria-selected="true">BASEMENT</a></li>
+          <li class="tabs-title is-active"><a href="#panel1c" class="button large alert">1<sup>ST</sup> FLOOR</a></li>
+          <li class="tabs-title "><a href="include2.html" class="button large alert">2<sup>ND</sup> FLOOR</a></li>
           <li class="tabs-title"><a href="#panelpfc" class="button large alert">PROJECTS & FELLOWSHIPS</a></li>
         </ul>
     </div>
 
     <div class="tabs-content" data-tabs-content="flex1-tabs">
 
-      <div class="tabs-panel is-active" id="panel0c">
-        <div data-include="floor0"></div>
+      <div class="tabs-panel" id="panel0c">
       </div>
      
-      <div class="tabs-panel" id="panel1c">
+      <div class="tabs-panel  is-active" id="panel1c">
         <div data-include="floor1"></div>
       </div>
       
-      <div class="tabs-panel" id="panel2c">
-        <div data-include="floor2"></div>
+      <div class="tabs-panel is-active" id="panel2c">
       </div>
       
       <div class="tabs-panel" id="panelpfc">
-        <div data-include="projects_fellowships"></div>
+      <div data-include="projects_fellowships"></div>
       </div>
      
     </div>
@@ -106,6 +104,16 @@ foundationUpdate($(".reveal small"));
 foundationUpdate($(".reveal medium"));
 foundationUpdate($(".tabs-content"));
 foundationUpdate($(".tabs-panel"));
+
+$('img[usemap]').mapster({
+  fillOpacity: 0.3,
+  fillColor: "ffffff",
+  stroke: true,
+  strokeColor: "3320FF",
+  strokeOpacity: 0.8,
+  strokeWidth: 3,
+  singleSelect: true
+});
 
 </script>
 
