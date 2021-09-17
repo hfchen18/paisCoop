@@ -25,7 +25,7 @@
   <h4>Visualization Lab</h4>
   <div>
     <a href="https://isco-op.unm.edu/meeting-space/visualization-lab.html" class="button" target="_blank">Website</a>
-    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">To reserve the space</a>
+    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">Reserve the Space</a>
   </div>
   <p>This isn't your average video wall - it's a groundbreaking visualization environment that brings big understanding to big data. With a 150,000,000 pixel resolution (23,040 x 6480), anything is possible.</p>
 
@@ -37,21 +37,14 @@
     <li>Window shades for privacy, if needed</li>
     <li>Blazing fast Wi-Fi</li>
   </ul>
-  <img src="img/1st Floor/VizLab2.jpg" /> 
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/1st Floor/VizLab2.jpg" /> 
+  </P>
   
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 
-</div>
-
-<div id="secondModal" class="reveal medium" data-reveal>
-  <div class="flex-video">
-    <iframe src="https://www.youtube.com/embed/57NFJI9tng0" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
 </div>
 
 <div id="workroom" class="reveal small" data-reveal>
@@ -60,7 +53,7 @@
   <h4>Work Room</h4>
   <div>
     <a href="https://isco-op.unm.edu/meeting-space/work-room.html" class="button" target="_blank">Website</a>
-    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">To reserve the space</a>
+    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">Reserve the Space</a>
   </div>
   <p>Break into groups in the work room for code training or bring everyone together for a presentation. The Visualization Lab in the adjoining room also opens into this space, turning the incredible display next door from a research tool into a research training tool. </p>
 
@@ -78,8 +71,8 @@
 
 <div id="courtyard" class="reveal small" data-reveal>
   <img src="img/1st Floor/Courtyard.jpg" /> 
-  <h4>Courtyard</h4>
-  <p>Everyone who enters PAÍS from the west entrance is greeted to a welcoming sitting area that can be used for group work, to relax, or even for private events (please contact <a href = "mailto: igray@unm.edu">Irene Gray</a> if you are interested in reserving the space. </p>
+  <h4>PAÍS Courtyard</h4>
+  <p>Everyone who enters PAÍS from the west entrance is greeted to a welcoming sitting area that can be used for group work, to relax, or even for private events (please contact <a href = "mailto: igray@unm.edu">Irene Gray</a> if you are interested in reserving the space). </p>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -87,11 +80,13 @@
 
 <div id="lobby1" class="reveal small" data-reveal>
   <img src="img/1st Floor/Lobby_1st_Floor.jpg" /> 
-  <h4>Lobby on 1st Floor</h4>
+  <h4>1<sup>st</sup> Floor Lobby</h4>
   <p>PAÍS was built with the intent to bring people together and the spaces within it reflect this throughout. Brightly colored areas, like the Lobby, indicate open areas within the building that anyone is welcome to collaborate in at any given moment. No reservation required. White boards, tables, and USB ports are all available in these spaces and everyone has access to the Wi-Fi within the building to expand upon their ideas.
     <br><br> Across from the Lobby is on one of our newest installations, the PAÍS donor wall. As a thank you to those who helped make the building and the programs within it possible, the donor wall stands as a testament to the power of people coming together to create change.
   </p>
-  <img src="img/1st Floor/Donor Wall.jpg" /> 
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/1st Floor/Donor Wall.jpg" /> 
+  </p>
   <h4>Donor Wall</h4>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
@@ -104,17 +99,24 @@
   <div>
     <a href="https://isco-op.unm.edu/centers/csi.html" class="button" target="_blank">Website</a>
     <button data-open="secondModal_csi" class="button">Video</button>
-    <button data-open="secondModal_csi1" class="button">One More Video?</button>
-    <a href="https://isco-op.unm.edu/community/news/internationally-recognized-short-course-makes-its-new-home-at-unm.html" class="button" target="_blank">IsoCamp</a>
-    <a href="https://isco-op.unm.edu/community/news/csi-awarded-three-year-nsf-collaborative-grant.html" class="button" target="_blank">Three-Year Collaborative Grant</a>
+    <button class="button" type="button" data-toggle="csi-dropdown">News</button>
   </div>
   
+    <div class="dropdown-pane" id="csi-dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+        <ul>
+            <li><a href="https://isco-op.unm.edu/community/news/internationally-recognized-short-course-makes-its-new-home-at-unm.html" target="_blank">IsoCamp</a></li>
+            <li><a href="https://isco-op.unm.edu/community/news/csi-awarded-three-year-nsf-collaborative-grant.html" target="_blank">Three-Year Collaborative Grant</a></li>
+        </ul>
+    </div>
+
+
   <p>As one of the largest stable isotope centers in the United States in terms of instrumentation and cutting-edge analytical capabilities, the Center for Stable Isotopes (CSI) collaborates with approximately 50 universities and research institutions throughout the world on their research. Within this lab, applications range from routine analyses to complex, state-of-the-art measurements that are done in only a handful of other laboratories around the world.</p>
-  
-  <img src="img/1st Floor/CSI/CSI1.jpg" /> 
-  <img src="img/1st Floor/CSI/CSI3.jpg" /> 
-  <img src="img/1st Floor/CSI/IsoCamp1.jpg" /> 
-  <img src="img/1st Floor/CSI/Rock.JPG" /> 
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/1st Floor/CSI/CSI1.jpg" />
+  <img class="thumbnail" src="img/1st Floor/CSI/CSI3.jpg" />
+  <img class="thumbnail" src="img/1st Floor/CSI/IsoCamp1.jpg" />
+  <img class="thumbnail" src="img/1st Floor/CSI/Rock.JPG" />
+  </p>
   
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
@@ -126,7 +128,7 @@
   <div class="flex-video">
     <iframe src="https://www.youtube.com/embed/tqtH-FIS2h8" frameborder="0" allowfullscreen></iframe>
   </div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
+  <button class="close-button" data-open="csi" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>

@@ -18,6 +18,21 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.js" integrity="sha512-cpMx2tMC8g9QilwXFVFqVT5TWkvfq/xEaOspfF1FUUUJy5mL6As50+uh3yOoVlu1bKwsJrUthuEzC1m6WquRKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<style>
+.thumbnail{
+  width: 40%;
+  height: auto;
+  z-index:999;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+.thumbnail:hover {
+    transform: scale(2);
+}
+
+</style>
 </head>
 
 <body> 
@@ -25,35 +40,37 @@
 
 <div class="callout success text-center">
   <p>Welcome to the UNM Interdisciplinary Science Cooperative’s Virtual Open House. Until we can safely invite you 
-into our space within PAIS we hope that this virtual experience not only teaches you about how our 
+into our space within PAÍS we hope that this virtual experience not only teaches you about how our 
 collaborative is supporting our University’s research mission but also gives you a firsthand look at our state-of-the art facility.
-<br><br>Throughout the month of October, please take time to explore each of our Centers and laboratories, as well as 
-our projects. If you are interested in getting involved in our upcoming Team Research Symposium or any of our 
-other upcoming activities, please contact <a href = "mailto: igray@unm.edu">Irene</a>.</p>
+<br><br>Throughout the month of October, please take time to explore each of our Centers and laboratories, as well as our projects and fellowship. 
+If you are interested in getting involved in our Team Research Symposium this spring or any of our other upcoming activities, please contact <a href = "mailto: igray@unm.edu">Irene</a>.</p>
 </div>
 
 
 <div class="button-group align-center">
-  <a href="https://isco-op.unm.edu/community/membership.html" target="_blank" class="button alert" style='width: 20%;'>BECOME A MEMBER</a>
+  <a href="https://isco-op.unm.edu/community/membership.html" target="_blank" class="button alert" style='width: 20%;'>BECOME A MEMBER of the Co-op</a>
   <a href="https://isco-op.unm.edu/meeting-space/room-request.html" target="_blank" class="button alert" style='width: 20%;'>RESERVE A COLLABORATIVE MEETING SPACE FOR YOUR TEAM</a>
   <a href="https://forms.unm.edu/forms/newsletter_mailing_list_signup" target="_blank" class="button alert" style='width: 20%;'>JOIN OUR MAILING LIST</a>
   <a href="https://isco-op.unm.edu/community/giving-opportunities.html" target="_blank" class="button alert" style='width: 20%;'>MAKE A GIFT</a>
 </div>
 
-<p class="text-center"><i>CLICK THE TABS BELOW TO TRAVEL THROUGH THE FLOORS OF PAIS.<br> ONCE YOU ARE ON YOUR SELECTED
+<p class="text-center"><i>CLICK THE TABS BELOW TO TRAVEL THROUGH THE FLOORS OF PAÍS.<br> ONCE YOU ARE ON YOUR SELECTED
 FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THEM.</i></p>
 
-<div class="row"> 
+<p id="tabs"></p>
+
+<div class="row">
     <div class="button-group align-center">
-        <a href="index0.html" class="button large alert">BASEMENT</a>
-        <a href="index1.html" class="button large success">1<sup>ST</sup> FLOOR</a>
-        <a href="index2.html" class="button large alert">2<sup>ND</sup> FLOOR</a>
-        <a href="indexpf.html" class="button large alert">PROJECTS & FELLOWSHIPS</a>
+        <a href="index0.html#tabs" class="button large alert">BASEMENT</a>
+        <a href="index1.html#tabs" class="button large hollow alert">1<sup>ST</sup> FLOOR</a>
+        <a href="index2.html#tabs" class="button large alert">2<sup>ND</sup> FLOOR</a>
+        <a href="indexpf.html#tabs" class="button large alert">PROJECTS & FELLOWSHIP</a>
     </div>
 </div>
 
-
-<p>1<sup>ST</sup> FLOOR</p>
+<!---
+<p>&ensp;&ensp;&ensp;&ensp;1<sup>ST</sup> FLOOR</p>
+--->
 
 <div style="display: flex; justify-content: center;">
     <div style="max-width: 15%; max-height: 15%;">
@@ -79,7 +96,7 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <h4>Visualization Lab</h4>
   <div>
     <a href="https://isco-op.unm.edu/meeting-space/visualization-lab.html" class="button" target="_blank">Website</a>
-    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">To reserve the space</a>
+    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">Reserve the Space</a>
   </div>
   <p>This isn't your average video wall - it's a groundbreaking visualization environment that brings big understanding to big data. With a 150,000,000 pixel resolution (23,040 x 6480), anything is possible.</p>
 
@@ -91,21 +108,14 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
     <li>Window shades for privacy, if needed</li>
     <li>Blazing fast Wi-Fi</li>
   </ul>
-  <img src="img/1st Floor/VizLab2.jpg" /> 
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/1st Floor/VizLab2.jpg" /> 
+  </P>
   
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 
-</div>
-
-<div id="secondModal" class="reveal medium" data-reveal>
-  <div class="flex-video">
-    <iframe src="https://www.youtube.com/embed/57NFJI9tng0" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
 </div>
 
 <div id="workroom" class="reveal small" data-reveal>
@@ -114,7 +124,7 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <h4>Work Room</h4>
   <div>
     <a href="https://isco-op.unm.edu/meeting-space/work-room.html" class="button" target="_blank">Website</a>
-    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">To reserve the space</a>
+    <a href="https://isco-op.unm.edu/meeting-space/room-request.html" class="button" target="_blank">Reserve the Space</a>
   </div>
   <p>Break into groups in the work room for code training or bring everyone together for a presentation. The Visualization Lab in the adjoining room also opens into this space, turning the incredible display next door from a research tool into a research training tool. </p>
 
@@ -132,8 +142,8 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
 
 <div id="courtyard" class="reveal small" data-reveal>
   <img src="img/1st Floor/Courtyard.jpg" /> 
-  <h4>Courtyard</h4>
-  <p>Everyone who enters PAÍS from the west entrance is greeted to a welcoming sitting area that can be used for group work, to relax, or even for private events (please contact <a href = "mailto: igray@unm.edu">Irene Gray</a> if you are interested in reserving the space. </p>
+  <h4>PAÍS Courtyard</h4>
+  <p>Everyone who enters PAÍS from the west entrance is greeted to a welcoming sitting area that can be used for group work, to relax, or even for private events (please contact <a href = "mailto: igray@unm.edu">Irene Gray</a> if you are interested in reserving the space). </p>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -141,12 +151,15 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
 
 <div id="lobby1" class="reveal small" data-reveal>
   <img src="img/1st Floor/Lobby_1st_Floor.jpg" /> 
-  <h4>Lobby on 1st Floor</h4>
+  <h4>1<sup>st</sup> Floor Lobby</h4>
   <p>PAÍS was built with the intent to bring people together and the spaces within it reflect this throughout. Brightly colored areas, like the Lobby, indicate open areas within the building that anyone is welcome to collaborate in at any given moment. No reservation required. White boards, tables, and USB ports are all available in these spaces and everyone has access to the Wi-Fi within the building to expand upon their ideas.
     <br><br> Across from the Lobby is on one of our newest installations, the PAÍS donor wall. As a thank you to those who helped make the building and the programs within it possible, the donor wall stands as a testament to the power of people coming together to create change.
   </p>
-  <img src="img/1st Floor/Donor Wall.jpg" /> 
-  <h4>Donor Wall</h4>
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/1st Floor/Donor Wall.jpg" /> 
+  </p>
+  <h4 style="text-align:center;">Donor Wall</h4>
+  
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -158,17 +171,24 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <div>
     <a href="https://isco-op.unm.edu/centers/csi.html" class="button" target="_blank">Website</a>
     <button data-open="secondModal_csi" class="button">Video</button>
-    <button data-open="secondModal_csi1" class="button">One More Video?</button>
-    <a href="https://isco-op.unm.edu/community/news/internationally-recognized-short-course-makes-its-new-home-at-unm.html" class="button" target="_blank">IsoCamp</a>
-    <a href="https://isco-op.unm.edu/community/news/csi-awarded-three-year-nsf-collaborative-grant.html" class="button" target="_blank">Three-Year Collaborative Grant</a>
+    <button class="button" type="button" data-toggle="csi-dropdown">News</button>
   </div>
   
+    <div class="dropdown-pane" id="csi-dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+        <ul>
+            <li><a href="https://isco-op.unm.edu/community/news/internationally-recognized-short-course-makes-its-new-home-at-unm.html" target="_blank">IsoCamp</a></li>
+            <li><a href="https://isco-op.unm.edu/community/news/csi-awarded-three-year-nsf-collaborative-grant.html" target="_blank">Three-Year Collaborative Grant</a></li>
+        </ul>
+    </div>
+
+
   <p>As one of the largest stable isotope centers in the United States in terms of instrumentation and cutting-edge analytical capabilities, the Center for Stable Isotopes (CSI) collaborates with approximately 50 universities and research institutions throughout the world on their research. Within this lab, applications range from routine analyses to complex, state-of-the-art measurements that are done in only a handful of other laboratories around the world.</p>
-  
-  <img src="img/1st Floor/CSI/CSI1.jpg" /> 
-  <img src="img/1st Floor/CSI/CSI3.jpg" /> 
-  <img src="img/1st Floor/CSI/IsoCamp1.jpg" /> 
-  <img src="img/1st Floor/CSI/Rock.JPG" /> 
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/1st Floor/CSI/CSI1.jpg" />
+  <img class="thumbnail" src="img/1st Floor/CSI/CSI3.jpg" />
+  <img class="thumbnail" src="img/1st Floor/CSI/IsoCamp1.jpg" />
+  <img class="thumbnail" src="img/1st Floor/CSI/Rock.JPG" />
+  </p>
   
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
@@ -180,10 +200,11 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <div class="flex-video">
     <iframe src="https://www.youtube.com/embed/tqtH-FIS2h8" frameborder="0" allowfullscreen></iframe>
   </div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
+  <button class="close-button" data-open="csi" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+
 
 <script>
 $(document).foundation();

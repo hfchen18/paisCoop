@@ -17,7 +17,21 @@
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.js" integrity="sha512-cpMx2tMC8g9QilwXFVFqVT5TWkvfq/xEaOspfF1FUUUJy5mL6As50+uh3yOoVlu1bKwsJrUthuEzC1m6WquRKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+.thumbnail{
+  width: 40%;
+  height: auto;
+  z-index:999;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+.thumbnail:hover {
+    transform: scale(2);
+}
 
+</style>
 </head>
 
 <body> 
@@ -25,34 +39,37 @@
 
 <div class="callout success text-center">
   <p>Welcome to the UNM Interdisciplinary Science Cooperative’s Virtual Open House. Until we can safely invite you 
-into our space within PAIS we hope that this virtual experience not only teaches you about how our 
+into our space within PAÍS we hope that this virtual experience not only teaches you about how our 
 collaborative is supporting our University’s research mission but also gives you a firsthand look at our state-of-the art facility.
-<br><br>Throughout the month of October, please take time to explore each of our Centers and laboratories, as well as 
-our projects. If you are interested in getting involved in our upcoming Team Research Symposium or any of our 
-other upcoming activities, please contact <a href = "mailto: igray@unm.edu">Irene</a>.</p>
+<br><br>Throughout the month of October, please take time to explore each of our Centers and laboratories, as well as our projects and fellowship. 
+If you are interested in getting involved in our Team Research Symposium this spring or any of our other upcoming activities, please contact <a href = "mailto: igray@unm.edu">Irene</a>.</p>
 </div>
 
 
 <div class="button-group align-center">
-  <a href="https://isco-op.unm.edu/community/membership.html" target="_blank" class="button alert" style='width: 20%;'>BECOME A MEMBER</a>
+  <a href="https://isco-op.unm.edu/community/membership.html" target="_blank" class="button alert" style='width: 20%;'>BECOME A MEMBER of the Co-op</a>
   <a href="https://isco-op.unm.edu/meeting-space/room-request.html" target="_blank" class="button alert" style='width: 20%;'>RESERVE A COLLABORATIVE MEETING SPACE FOR YOUR TEAM</a>
   <a href="https://forms.unm.edu/forms/newsletter_mailing_list_signup" target="_blank" class="button alert" style='width: 20%;'>JOIN OUR MAILING LIST</a>
   <a href="https://isco-op.unm.edu/community/giving-opportunities.html" target="_blank" class="button alert" style='width: 20%;'>MAKE A GIFT</a>
 </div>
 
-<p class="text-center"><i>CLICK THE TABS BELOW TO TRAVEL THROUGH THE FLOORS OF PAIS.<br> ONCE YOU ARE ON YOUR SELECTED
+<p class="text-center"><i>CLICK THE TABS BELOW TO TRAVEL THROUGH THE FLOORS OF PAÍS.<br> ONCE YOU ARE ON YOUR SELECTED
 FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THEM.</i></p>
 
-<div class="row"> 
+<p id="tabs"></p>
+
+<div class="row">
     <div class="button-group align-center">
-        <a href="index0.html" class="button large success">BASEMENT</a>
-        <a href="index1.html" class="button large  alert">1<sup>ST</sup> FLOOR</a>
-        <a href="index2.html" class="button large alert">2<sup>ND</sup> FLOOR</a>
-        <a href="indexpf.html" class="button large alert">PROJECTS & FELLOWSHIPS</a>
+        <a href="index0.html#tabs" class="button large hollow alert">BASEMENT</a>
+        <a href="index1.html#tabs" class="button large alert">1<sup>ST</sup> FLOOR</a>
+        <a href="index2.html#tabs" class="button large alert">2<sup>ND</sup> FLOOR</a>
+        <a href="indexpf.html#tabs" class="button large alert">PROJECTS & FELLOWSHIP</a>
     </div>
 </div>
 
-<p>BASEMENT</p>
+<!---
+<p>&ensp;&ensp;&ensp;&ensp;BASEMENT</p>
+--->
 
 <div style="display: flex; justify-content: center;">
     <div style="max-width: 15%; max-height: 15%;">
@@ -85,9 +102,10 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
     but to also create tailored materials to optimize and exploit specific chemical interactions. Materials that show large magneto-optical responses are employed in high-technology optical switches and novel optical materials in a variety of applications. The lab’s instruments can even detect UV to the near infrared (N-IR).
   </p>
   
-    <img src="img/Basement/LMOS/LMOS2.JPG" /> 
-    <img src="img/Basement/LMOS/Jeff.JPG" /> 
-
+  <p style="text-align:center;">
+    <img class="thumbnail" src="img/Basement/LMOS/LMOS2.JPG" /> 
+    <img class="thumbnail" src="img/Basement/LMOS/Jeff.JPG" /> 
+  </p>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -98,7 +116,7 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <div class="flex-video">
     <iframe src="https://www.youtube.com/embed/-odbc4Iy5zc" frameborder="0" allowfullscreen></iframe>
   </div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
+  <button class="close-button" data-open="LMOS" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
@@ -114,8 +132,9 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   </div>
   <p>As the only academic facility of its kind in New Mexico, the Nanomaterials Characterization Facility (NCF) provides a vital resource to researchers throughout the state. The instruments in this lab are capable of X-ray diffraction, scanning electron microscopy, focused ion beam techniques and transmission electron microscopy in order to analyze the chemistry and structure of a variety of synthetic and natural materials. Through multiple collaborations throughout the state, the NCF is able to study everything from minerals found from NASA and JAXA space missions to semiconductors and other man-made materials that support our modern day living.</p>
   
-  <img src="img/Basement/NCF/NEOARM2.jpg" /> 
-  
+  <p style="text-align:center;">
+  <img class="thumbnail" src="img/Basement/NCF/NEOARM2.jpg" /> 
+  </p>
   <button class="close-button" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -125,7 +144,7 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   <div class="flex-video">
     <iframe src="https://www.youtube.com/embed/emLs-Wl_tnM" frameborder="0" allowfullscreen></iframe>
   </div>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
+  <button class="close-button" data-open="NCF" data-close aria-label="Close reveal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
