@@ -71,17 +71,32 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
 </div>
 
 <map name="image-map2">
-    <area alt="confroom" data-open="confroom" href="" coords="2097,1125,2403,1254" shape="rect">
-    <area alt="admin" data-open="admin" href="" coords="2103,633,2380,633,2377,712,2497,712,2497,893,2106,893,2103,790,2350,790,2350,738,2103,741" shape="poly">
-    <area alt="lobby2" data-open="lobby2" href="" coords="1689,1374,2024,1788" shape="rect">
-    <area alt="coop" data-open="co-op" href="" coords="2013,2035,2176,2035,2176,2285,2386,2288,2386,2320,2523,2320,2523,2536,1876,2536,1876,2213,2013,2213" shape="poly">
-    <area alt="openspace" data-open="openspace" href="" coords="2756,1037,2838,1253" shape="rect">
+    <area data-key="conf" alt="confroom" data-open="confroom" href="" coords="2097,1125,2403,1254" shape="rect">
+    <area data-key="admin" alt="admin" data-open="admin" href="" coords="2103,633,2380,633,2377,712,2497,712,2497,893,2106,893,2103,790,2350,790,2350,738,2103,741" shape="poly">
+    <area data-key="lobby2" alt="lobby2" data-open="lobby2" href="" coords="1689,1374,2024,1788" shape="rect">
+    <area data-key="coop" alt="coop" data-open="co-op" href="" coords="2013,2035,2176,2035,2176,2285,2386,2288,2386,2320,2523,2320,2523,2536,1876,2536,1876,2213,2013,2213" shape="poly">
+    <area data-key="os" alt="openspace" data-open="openspace" href="" coords="2756,1037,2838,1253" shape="rect">
+    <area data-key="os" alt="openspace1" data-open="openspace" href="" coords="640,1493,747,1635" shape="rect">
+    <area data-key="os" alt="openspace2" data-open="openspace" href="" coords="809,1490,934,1563" shape="rect">
+    <area data-key="os" alt="openspace3" data-open="openspace" href="" coords="1896,1793,2021,1930" shape="rect">
+    <area data-key="os" alt="openspace4" data-open="openspace" href="" coords="2016,97,2115,188" shape="rect">
+    <area data-key="os" alt="openspace5" data-open="openspace" href="" coords="2698,196,2838,272" shape="rect">
     
-    <area alt="aspire" data-open="aspire" href="" coords="2094,1602,2520,1602,2520,1753,2543,1753,2546,2032,2526,2032,2526,2324,2392,2321,2392,2283,2179,2280,2173,1900,2094,1900" shape="poly">
-    <area alt="cgat1" data-open="cgat1" href="" coords="1517,269,1876,593" shape="rect">
-    <area alt="cgat2" data-open="cgat1" href="" coords="2100,1257,2400,1257,2400,1123,2505,1123,2505,1251,2462,1251,2459,1333,2529,1333,2523,1598,2100,1598" shape="poly">
-    <area alt="cquic" data-open="cquic" href="" coords="447,1994,581,1994,581,2277,637,2280,640,1994,780,1994,788,2201,940,2201,934,2434,441,2431" shape="poly">
-    <area alt="chmpp" data-open="chmpp" href="" coords="567,53,1890,53,1890,190,1508,187,1508,598,1010,598,1016,188,564,184" shape="poly">
+    <area data-key="aspire" alt="aspire" data-open="aspire" href="" coords="2094,1602,2520,1602,2520,1753,2543,1753,2546,2032,2526,2032,2526,2324,2392,2321,2392,2283,2179,2280,2173,1900,2094,1900" shape="poly">
+    
+    <area data-key="cgat" alt="cgat1" data-open="cgat" href="" coords="1517,269,1876,593" shape="rect">
+    <area data-key="cgat" alt="cgat2" data-open="cgat" href="" coords="2100,1257,2400,1257,2400,1123,2505,1123,2505,1251,2462,1251,2459,1333,2529,1333,2523,1598,2100,1598" shape="poly">
+    <area data-key="cgat" alt="cgat4" data-open="cgat" href="" coords="1879,57,2024,188" shape="rect">
+    <area data-key="cgat" alt="cgat3" data-open="cgat" href="" coords="2118,54,2249,188" shape="rect">
+    
+    <area data-key="cquic" alt="cquic" data-open="cquic" href="" coords="447,1994,586,1994,586,2280,637,2280,640,1994,788,1994,788,2201,940,2201,934,2434,441,2431" shape="poly">
+    <area data-key="cquic" alt="cquic1" data-open="cquic" href="" coords="1048,1989,1261,2132" shape="rect">
+    <area data-key="cquic" alt="cquic2" data-open="cquic" href="" coords="1266,2134,1564,2140,1570,2210,1619,2236,1640,2271,1637,2324,1602,2353,1549,2362,1266,2362" shape="poly">
+
+    <area data-key="chmpp" alt="chmpp1" data-open="chmpp" href="" coords="570,51,1881,188" shape="rect">
+    <area data-key="chmpp" alt="chmpp2" data-open="chmpp" href="" coords="1007,269,1508,593" shape="rect">
+   
+   
 </map>
 
 <div id="aspire" class="reveal small" data-reveal>
@@ -236,7 +251,7 @@ FLOOR, CLICK ON THE COLORED SPACES WITHIN THE FLOOR PLAN TO LEARN MORE ABOUT THE
   </button>
 </div>
 
-<div id="cgat1" class="reveal small" data-reveal>
+<div id="cgat" class="reveal small" data-reveal>
   <img src="img/2nd Floor/CGaT/CGaT.JPG" />
   <h4>Computational Genomics and Technology (CGaT) Laboratory</h4>
 
@@ -382,7 +397,8 @@ $('img[usemap]').mapster({
   strokeColor: "3320FF",
   strokeOpacity: 0.8,
   strokeWidth: 3,
-  singleSelect: true
+  singleSelect: true,
+  mapKey: "data-key",
 });
 
 </script>
