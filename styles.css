@@ -23,7 +23,19 @@
     background-color:#007a86 !important;
 }
 
-a[title] {
+#introDiv {
+    background-color:#a7a8aa !important;
+}
+
+#introDiv1 {
+    background-color:white !important;
+}
+
+#introP {
+    color:white !important;
+}
+
+#topbar {
     width: 20%;
     display: flex; 
     justify-content: center; 
