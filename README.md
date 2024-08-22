@@ -14,5 +14,8 @@ It was built separately on [Foundation](https://get.foundation/index.html) and [
   <li><a href="bootstrap5/index.html" target="_blank" >Bootstrap 5</a></li>
 <ul>
 
-![Open House](img/WEB_HERO_Open_House.jpg)
-![Floor Map](img/map_capture.JPG)
+<p></p>
+<img src="img/WEB_HERO_Open_House.jpg" alt="Open House" width="500">
+
+<img src="img/map_capture.JPG" alt="Floor Map" width="500">
+
