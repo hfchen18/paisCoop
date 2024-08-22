@@ -1,0 +1,10 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/iscoop/public_html/isco-op.unm.edu/community/openhouse
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp index0.html $DEPLOYPATH
+ - /bin/cp index2.html $DEPLOYPATH
+ - /bin/cp indexpf.html $DEPLOYPATH
+ - /bin/cp styles.css $DEPLOYPATH
+ - /bin/cp -R img $DEPLOYPATH
